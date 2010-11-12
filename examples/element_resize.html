@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>jquery-afterresize: Element afterresize handler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Resize this window to resize flexible element</h1>
+
+<p>
+    Requires Ben "Cowboy" Alman's <a href="http://benalman.com/projects/jquery-resize-plugin/">jQuery resize plugin</a>.
+</p>
+
+<div class="flexible">Flexible element</div>
+
+<div id="result"></div>
+
+<script src="../lib/jquery-1.4.4.min.js"></script>
+<script src="../lib/jquery.ba-resize.min.js"></script>
+<script src="../jquery.afterresize.js"></script>
+<script>
+$(".flexible").bind("afterresize", function() {
+    $("#result").html("Element resizing ended: " + new Date());
+});
+
+$(".flexible").bind("resize", function() {
+    $("#result").html("Resizing element");
+});
+</script>
+
+</body>
+</html>

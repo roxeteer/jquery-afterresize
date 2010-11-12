@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>jquery-afterresize: Window afterresize handler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Resize this window</h1>
+
+<div id="result"></div>
+
+<script src="../lib/jquery-1.4.4.min.js"></script>
+<script src="../jquery.afterresize.js"></script>
+<script>
+$(window).bind("afterresize", function() {
+    $("#result").html("Window resizing ended: " + new Date());
+});
+
+$(window).bind("resize", function() {
+    $("#result").html("Resizing window");
+});
+</script>
+
+</body>
+</html>
