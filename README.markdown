@@ -35,7 +35,7 @@ The plugin has been tested to work with jQuery version 1.4.2 and 1.4.4. It **doe
 
 ### Browsers tested ###
 
-Internet Explorer 7-8, Firefox 3.6, Safari 5, Chrome 9 dev
+Internet Explorer 7-8, Firefox 3.6, Firefox 4.0b6, Safari 5, Chrome 9 dev
 
 ### Unit tests ###
 
