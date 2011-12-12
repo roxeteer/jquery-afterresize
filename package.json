@@ -1,0 +1,27 @@
+{
+    "name": "afterresize",
+    "version": "1.0",
+    "title": "AfterResize event",
+    "author": {
+        "name": "Visa Kopu",
+        "email": "visa@visakopu.net"
+    },
+    "licenses": [
+        {
+            "type": "BSD",
+            "url": "LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.4"
+    },
+    "description": "With jQuery afterresize event plugin, an event is triggered when resizing the window has ended.",
+    "homepage": "http://github.com/roxeteer/jquery-afterresize",
+    "keywords": [
+        "resize",
+        "afterresize",
+        "event",
+        "events",
+        "window"
+    ]
+}
